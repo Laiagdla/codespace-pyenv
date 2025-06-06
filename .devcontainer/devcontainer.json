@@ -1,12 +1,20 @@
 {
     "name": "Python with pyenv",
     "dockerFile": "Dockerfile",
-    "settings": {
-        "python.pythonPath": "/root/.pyenv/shims/python",
-        "terminal.integrated.shellArgs": ["--login", "-b"]
-    },
-    "extensions": [
-        "ms-python.python"
-    ],
-    "remoteUser": "root"
+    
+    "postCreateCommand": "pip3 install --user -r requirements.txt",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "python.pythonPath": "/root/.pyenv/shims/python",
+                "terminal.integrated.shellArgs": ["--login", "-b"]
+            },
+            "extensions": [
+                "ms-python.python",
+                "KevinRose.vsc-python-indent",
+                "ms-python.vscode-pylance",
+                "ms-toolsai.jupyter"
+            ]
+        }
+    }
 }
