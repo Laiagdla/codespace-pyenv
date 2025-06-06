@@ -1,0 +1,12 @@
+{
+    "name": "Python with pyenv",
+    "dockerFile": "Dockerfile",
+    "settings": {
+        "python.pythonPath": "/root/.pyenv/shims/python",
+        "terminal.integrated.shellArgs": ["--login", "-b"]
+    },
+    "extensions": [
+        "ms-python.python"
+    ],
+    "remoteUser": "root"
+}
