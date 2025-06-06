@@ -1,8 +1,7 @@
 {
-    "name": "Python 3.12.9 lewagon setup",
+    "name": "Python 3.10.6",
     "dockerFile": "Dockerfile",
     "remoteUser": "vscode",
-    "postCreateCommand": "pip3 install --user -r https://raw.githubusercontent.com/lewagon/data-setup/master/specs/releases/linux.txt",
     "customizations": {
         "vscode": {
             "settings": {

@@ -62,9 +62,9 @@ RUN echo 'export PYENV_ROOT="$HOME/.pyenv"' >> $HOME/.zshrc && \
 	echo 'eval "$(pyenv virtualenv-init -)"' >> $HOME/.zshrc
 
 # Python
-RUN pyenv install 3.12.9 && \
-	pyenv global 3.12.9
-ENV PYENV_VERSION 3.12.9
+RUN pyenv install 3.10.6 && \
+	pyenv global 3.10.6
+ENV PYENV_VERSION 3.10.6
 
 # zsh (Oh My Zsh)
 RUN echo 'eval "$(direnv hook zsh)"' >> $HOME/.zshrc
