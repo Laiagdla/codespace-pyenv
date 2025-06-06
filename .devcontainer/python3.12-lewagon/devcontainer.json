@@ -1,0 +1,20 @@
+{
+    "name": "Python with pyenv",
+    "dockerFile": "Dockerfile",
+    "remoteUser": "vscode",
+    "postCreateCommand": "pip3 install --user -r https://raw.githubusercontent.com/lewagon/data-setup/master/specs/releases/linux.txt",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "python.pythonPath": "/home/vscode/.pyenv/shims/python",
+                "terminal.integrated.shellArgs": ["--login", "-b"]
+            },
+            "extensions": [
+                "ms-python.python",
+                "KevinRose.vsc-python-indent",
+                "ms-python.vscode-pylance",
+                "ms-toolsai.jupyter"
+            ]
+        }
+    }
+}
